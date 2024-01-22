@@ -994,6 +994,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 161px;
     align-items: center;
     position: relative;
     z-index: 1;
