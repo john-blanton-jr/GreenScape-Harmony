@@ -1,0 +1,177 @@
+---
+title: "Reviews"
+description: "Meta description for the page"
+preloadImg: "/assets/images/cabinets2.jpg"
+permalink: "reviews/"
+eleventyNavigation:
+  key: Reviews
+  order: 400
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/reviews.css" />
+{% endblock %} {% block body %}
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+  <h1 id="home-h">Our Reviews</h1>
+  <picture class="cs-picture">
+    <source media="(max-width: 600px)" srcset="/assets/images/cta1-m.webp" />
+    <source media="(min-width: 601px)" srcset="/assets/images/cta1.webp" />
+    <img
+      aria-hidden="true"
+      decoding="async"
+      src="/assets/images/landing.jpg"
+      alt="new home"
+      width="2500"
+      height="1667"
+      loading="eager"
+    />
+  </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                  Reviews                     -->
+<!-- ============================================ -->
+
+<section id="reviews">
+  <div class="container">
+    <div class="review">
+      
+      <p>
+        GreenScape Harmony turned our chaotic backyard into a peaceful retreat.
+        Their attention to sustainability is remarkable. We absolutely love it!
+      </p>
+      <div class="star-group">
+        <span class="name">
+          The Carters<span class="desc">Homeowner</span></span
+        >
+        <picture>
+            <img
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/svgs/stars.svg"
+              alt="stars"
+              width="91"
+              height="15"
+            />
+          </picture>
+      </div>
+    </div>
+    <div class="review">
+      
+      <p>
+        Our front yard has never looked better! The team at GreenScape Harmony
+        were professional, creative, and incredibly knowledgeable.
+      </p>
+      <div class="star-group">
+        <span class="name">
+          Mike & Laura B.<span class="desc">Homeowner</span></span
+        >
+        <picture>
+            <img
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/svgs/stars.svg"
+              alt="stars"
+              width="91"
+              height="15"
+            />
+          </picture>
+      </div>
+    </div>
+    <div class="review">
+      
+      <p>
+        Impressed with their eco-friendly approach. They installed a smart
+        irrigation system that's easy and efficient—our garden is thriving
+      </p>
+      <div class="star-group">
+        <span class="name">Jennifer A.<span class="desc">Homeowner</span></span>
+        <picture>
+          <img
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/stars.svg"
+            alt="stars"
+            width="91"
+            height="15"
+          />
+        </picture>
+      </div>
+    </div>
+    <div class="review">
+      
+      <p>
+        The 3D landscape design was a game-changer for us. We could see our
+        dream before it happened. GreenScape Harmony truly delivered.
+      </p>
+      <div class="star-group">
+        <span class="name">Samuel K.<span class="desc">Homeowner</span></span>
+        <picture>
+            <img
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/svgs/stars.svg"
+              alt="stars"
+              width="91"
+              height="15"
+            />
+          </picture>
+      </div>
+    </div>
+    <div class="review">
+      
+      <p>
+        "From the design process to the final plant placed, GreenScape Harmony
+        was outstanding. Our outdoor space now feels like a natural extension of
+        our home.
+      </p>
+      <div class="star-group">
+        <span class="name">Emily T.<span class="desc">Homeowner</span></span>
+        <picture>
+          <img
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/stars.svg"
+            alt="stars"
+            width="91"
+            height="15"
+          />
+        </picture>
+      </div>
+    </div>
+    <div class="review">
+      
+      <p>
+        I'm grateful for the transformation GreenScape Harmony achieved with my
+        small garden space. Their organic lawn care service is fantastic and
+        eco-conscious.
+      </p>
+      <div class="star-group">
+        <span class="name">Derek G.<span class="desc">Homeowner</span></span>
+        <picture>
+          <img
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/stars.svg"
+            alt="stars"
+            width="91"
+            height="15"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include 'components/cta.html' %} {% endblock %}

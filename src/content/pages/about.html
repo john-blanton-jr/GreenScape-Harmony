@@ -1,0 +1,73 @@
+---
+title: 'About'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'about/'
+eleventyNavigation:
+    key: About Us
+    order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">About Us</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/cta1.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/cta1-m.webp">
+            <img aria-hidden="true" decoding="async" src="/assets/images/cta1.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
+
+    </section>
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="sbs">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-left">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="assets/svgs/communityImage.webp">
+                    <source media="(min-width: 601px)" srcset="/assets/svgs/communityImage-m.webp">
+                    <img aria-hidden="true" decoding="async" src="/assets/svgs/communityImage.jpg" alt="cabinets" loading="lazy" width="400" height="563">
+                </picture>
+                <picture class="cs-picture cs-picture2">
+                    <source media="(max-width: 600px)" srcset="/assets/images/cta2-m.webp">
+                    <source media="(min-width: 601px)" srcset="/assets/images/cta2.webp">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/cta2.jpg" alt="house" loading="lazy" width="400" height="563">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-right">
+                <span class="cs-topper">About Us</span>
+                <h2 class="cs-title">About Company Title</h2>
+                <p class="cs-text">
+                    GreenScape Harmony is a small, family-owned landscaping business dedicated to creating serene and sustainable outdoor spaces. Founded in the heart of the Midwest, we specialize in designing, constructing, and maintaining residential and small commercial landscapes. Our passion for nature and commitment to eco-friendly practices are at the core of every project we undertake.
+                </p>
+                <div class="cs-flex-group">
+                    <p class="cs-flex-p">
+                        As co-founder of GreenScape Harmony, I've always believed that landscaping goes beyond mere aesthetics. It's about cultivating an environment where nature and human design exist in mutual respect. Every project we embark on is an opportunity to not only beautify a space but also to protect and enhance the natural ecosystem. Our commitment to sustainable practices is not just a service—it's a promise to future generations
+                    </p>
+                    <span class="cs-name">Jordan Miller</span>
+                    <span class="cs-job">Co-Founder of GreenScape Harmony</span>
+                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
+                </div>
+                <a href="/projects" class="cs-button-solid">Our Projects</a>
+            </div>
+        </div>
+    </section>
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}

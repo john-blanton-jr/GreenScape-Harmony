@@ -1,0 +1,848 @@
+---
+title: "Pixel Perfect Websites"
+description: "Meta description for the page"
+preloadImg: "/assets/images/landing.jpg"
+permalink: "/"
+eleventyNavigation:
+  key: Home
+  order: 100
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/local.css" />
+<link rel="stylesheet" href="/assets/css/critical.css" />
+
+<!-- Script for Netlify Identity -->
+<script
+  defer
+  src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+></script>
+<script defer>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+{% endblock %} {% block body %}
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-671">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper"
+        >Crafting Eco-Friendly Outdoor Spaces for Over 20 Years</span
+      >
+      <h2 class="cs-title">
+        Trusted <span class="cs-color">Landscape Experts</span> in your area
+      </h2>
+      <p class="cs-text">
+        Specializing in sustainable landscape design, transforming outdoor
+        spaces for over 20 years. Our expertise ranges from garden revivals to
+        hardscaping, always with an eco-friendly approach. Looking to upgrade
+        your outdoor area? Contact us today and let's create your perfect green
+        oasis.
+      </p>
+      <a href="" class="cs-button-solid">Free Estimate</a>
+    </div>
+    <picture class="cs-background">
+      <!--Desktop-->
+      <source
+        media="(min-width: 1024px)"
+        srcset="/assets/svgs/HeroLandscapeImage.webp"
+      />
+      <!--Tablet-->
+      <source
+        media="(min-width: 768px)"
+        srcset="/assets/svgs/HeroLandscapeImage-t1.webp"
+      />
+      <!--Mobile Image-->
+      <source
+        media="(max-width: 600px)"
+        srcset="/assets/svgs/HeroLandscapeImage-m.webp"
+      />
+      <img
+        decoding="async"
+        src="/assets/svgs/HeroLandscapeImage.jpg"
+        alt="consultation"
+        width="960"
+        height="979"
+        aria-hidden="true"
+      />
+    </picture>
+  </div>
+</section>
+<!-- ============================================ -->
+<!--                   Services                   -->
+<!-- ============================================ -->
+
+<section id="services-469">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Services</span>
+      <h2 class="cs-title">Landscaping Services</h2>
+      <p class="cs-text">
+        GreenScape Harmony strives to create outdoor spaces that are not only
+        visually stunning but also environmentally responsible, reflecting our
+        deep respect for nature and commitment to sustainability.
+      </p>
+    </div>
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <img
+            class="cs-icon"
+            src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/geen1.svg"
+            loading="lazy"
+            decoding="async"
+            alt="icon"
+            width="33"
+            height="38"
+            aria-hidden="true"
+          />
+        </picture>
+        <!-- Text Grouped For Flexbox-->
+        <div class="cs-item-group">
+          <h3 class="cs-h3">Custom Landscape Design</h3>
+          <p class="cs-item-text">
+            Our premier service, offering personalized designs that perfectly
+            align with our clients' visions and the natural characteristics of
+            their spaces.
+          </p>
+          <a href="" class="cs-link">Read More</a>
+        </div>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <img
+            class="cs-icon"
+            src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/green2.svg"
+            loading="lazy"
+            decoding="async"
+            alt="icon"
+            width="33"
+            height="38"
+            aria-hidden="true"
+          />
+        </picture>
+        <!-- Text Grouped For Flexbox-->
+        <div class="cs-item-group">
+          <h3 class="cs-h3">Eco-Friendly Solutions</h3>
+          <p class="cs-item-text">
+            We're committed to sustainability, employing environmentally
+            responsible practices like organic pest control and native
+            plantings.
+          </p>
+          <a href="" class="cs-link">Read More</a>
+        </div>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <img
+            class="cs-icon"
+            src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/green3.svg"
+            loading="lazy"
+            decoding="async"
+            alt="icon"
+            width="33"
+            height="38"
+            aria-hidden="true"
+          />
+        </picture>
+        <!-- Text Grouped For Flexbox-->
+        <div class="cs-item-group">
+          <h3 class="cs-h3">Seasonal Maintenance</h3>
+          <p class="cs-item-text">
+            Ensuring landscapes remain vibrant and healthy all year round is a
+            key aspect of our service.
+          </p>
+          <a href="" class="cs-link">Read More</a>
+        </div>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <img
+            class="cs-icon"
+            src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/green4.svg"
+            loading="lazy"
+            decoding="async"
+            alt="icon"
+            width="33"
+            height="38"
+            aria-hidden="true"
+          />
+        </picture>
+        <!-- Text Grouped For Flexbox-->
+        <div class="cs-item-group">
+          <h3 class="cs-h3">Hardscaping</h3>
+          <p class="cs-item-text">
+            We create beautiful, durable outdoor structures like patios and
+            walkways, always using sustainable materials.
+          </p>
+          <a href="" class="cs-link">Read More</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    Stats                     -->
+<!-- ============================================ -->
+
+<section id="stats-1660">
+  <div class="cs-container">
+    <picture class="cs-picture">
+      <source
+        media="(max-width: 600px)"
+        srcset="/assets/svgs/communityImage-m.webp"
+      />
+      <source
+        media="(min-width: 601px)"
+        srcset="/assets/svgs/communityImage.webp"
+      />
+      <img
+        loading="lazy"
+        decoding="async"
+        src="/assets/svgs/communityImage.jpg"
+        alt="volunteers"
+        width="630"
+        height="601"
+        aria-hidden="true"
+      />
+    </picture>
+    <div class="cs-content">
+      <div class="cs-flex">
+        <span class="cs-topper">community</span>
+        <h2 class="cs-title">Building long-term relationships</h2>
+        <p class="cs-text">
+          At GreenScape Harmony, we believe in building long-term relationships
+          with our clients and the community. We're not just about creating
+          beautiful landscapes; we're about nurturing them and educating our
+          clients on sustainable practices. We're also actively involved in
+          local environmental initiatives and community projects, reflecting our
+          commitment to making a positive impact beyond our business.
+        </p>
+      </div>
+      <ul class="cs-stat-group">
+        <li class="cs-stat">
+          <span class="cs-number">500+</span>
+          <span class="cs-desc">Projects Completed</span>
+        </li>
+        <li class="cs-stat">
+          <span class="cs-number">20+</span>
+          <span class="cs-desc">Years in the industry</span>
+        </li>
+        <li class="cs-stat">
+          <span class="cs-number">2K</span>
+          <span class="cs-desc">Satisfied Customers</span>
+        </li>
+        <li class="cs-stat">
+          <span class="cs-number">12</span>
+          <span class="cs-desc">Awards Received</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Why Choose Us                -->
+<!-- ============================================ -->
+
+<section id="why-choose-681">
+  <div class="cs-container">
+    <!-- Left Section -->
+    <div class="cs-image-group">
+      <picture class="cs-picture cs-picture1">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/svgs/whyus-1-m.webp"
+        />
+        <source media="(min-width: 601px)" srcset="/assets/svgs/whyus-1.webp" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/whyus-1.jpg"
+          alt="people outside"
+          width="306"
+          height="360"
+        />
+      </picture>
+      <picture class="cs-picture cs-picture2">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/svgs/whyus-2-m.webp"
+        />
+        <source media="(min-width: 601px)" srcset="/assets/svgs/whyus-2.webp" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/whyus-2.jpg"
+          alt="people outside"
+          width="306"
+          height="360"
+        />
+      </picture>
+      <picture class="cs-picture cs-picture3">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/svgs/whyus-3-m.webp"
+        />
+        <source media="(min-width: 601px)" srcset="/assets/svgs/whyus-3.webp" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/whyus-3.jpg"
+          alt="person gardening"
+          width="306"
+          height="360"
+        />
+      </picture>
+      <picture class="cs-picture cs-picture4">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/svgs/whyus-4-m.webp"
+        />
+        <source media="(min-width: 601px)" srcset="/assets/svgs/whyus-4.webp" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/whyus-4.jpg"
+          alt="urban environment in green"
+          width="306"
+          height="360"
+        />
+      </picture>
+      
+    </div>
+    <div class="cs-content">
+      <span class="cs-topper">Why Choose Us</span>
+      <h2 class="cs-title">
+        We<span class="cs-color"> Nurture</span> Your<span class="cs-color2">
+          Nature</span
+        >
+      </h2>
+      <p class="cs-text">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas,
+        pariatur:
+      </p>
+      <ul class="cs-ul">
+        <li class="cs-li">
+          <h3 class="cs-h3">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsquares.svg"
+              loading="lazy"
+              decoding="async"
+              alt="squares"
+              width="17"
+              height="18"
+            />
+            Expertise in Eco-Friendly Landscaping
+          </h3>
+          <p class="cs-item-text">
+            Our seasoned team is well-versed in creating environmentally
+            responsible landscapes. We choose local flora, employ water-saving
+            techniques, and use organic methods to maintain the natural balance
+            of your outdoor haven.
+          </p>
+        </li>
+        <li class="cs-li">
+          <h3 class="cs-h3">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsquares.svg"
+              loading="lazy"
+              decoding="async"
+              alt="squares"
+              width="17"
+              height="18"
+            />
+            Advanced Landscape Technology
+          </h3>
+          <p class="cs-item-text">
+            We harness the latest in landscape technology, offering 3D designs
+            and smart irrigation systems for efficient water management,
+            ensuring your garden is sustainable and easy to maintain.
+          </p>
+        </li>
+        <li class="cs-li">
+          <h3 class="cs-h3">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsquares.svg"
+              loading="lazy"
+              decoding="async"
+              alt="squares"
+              width="17"
+              height="18"
+            />
+            Comprehensive Range of Services
+          </h3>
+          <p class="cs-item-text">
+            From the initial design to regular maintenance, we provide a full
+            spectrum of landscaping services. Whether it's a tranquil backyard
+            retreat or a robust commercial landscape, we’ve got you covered.
+          </p>
+        </li>
+      </ul>
+      <a class="cs-button-solid" href="">Free Estimate</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    Services 2                 -->
+<!-- ============================================ -->
+
+<section id="services-1304">
+  <div class="cs-container">
+    <div class="cs-content">
+      <div class="cs-flex-group">
+        <span class="cs-topper">additional landscaping services </span>
+        <h2 class="cs-title">Professional landscaping Services</h2>
+      </div>
+    </div>
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <a href="" class="cs-link">
+          <img
+            class="cs-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/brain.svg"
+            loading="lazy"
+            decoding="async"
+            alt="icon"
+            width="40"
+            height="40"
+            aria-hidden="true"
+          />
+          <h3 class="cs-h3">Garden Revitalization</h3>
+          <p class="cs-item-text">
+            Transforming existing gardens into vibrant, low-maintenance spaces
+            with a focus on native and drought-resistant plants.
+          </p></a
+        >
+      </li>
+      <li class="cs-item">
+        <a href="" class="cs-link">
+          <img
+            class="cs-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/users.svg"
+            loading="lazy"
+            decoding="async"
+            alt="icon"
+            width="40"
+            height="40"
+            aria-hidden="true"
+          />
+          <h3 class="cs-h3">Smart Irrigation Installation</h3>
+          <p class="cs-item-text">
+            Elevate your garden's efficiency with our Smart Irrigation Systems,
+            designed to conserve water while ensuring your plants flourish.
+          </p>
+        </a>
+      </li>
+      <li class="cs-item">
+        <a href="" class="cs-link">
+          <img
+            class="cs-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/Layer.svg"
+            loading="lazy"
+            decoding="async"
+            alt="icon"
+            width="40"
+            height="40"
+            aria-hidden="true"
+          />
+          <h3 class="cs-h3">3D Landscape Visualization</h3>
+          <p class="cs-item-text">
+            Imagine the potential of your outdoor space with our 3D Landscape
+            Visualization service, offering a lifelike preview of your future
+            sanctuary.
+          </p>
+        </a>
+      </li>
+      <li class="cs-item">
+        <a href="" class="cs-link">
+          <img
+            class="cs-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/Layer.svg"
+            loading="lazy"
+            decoding="async"
+            alt="icon"
+            width="40"
+            height="40"
+            aria-hidden="true"
+          />
+          <h3 class="cs-h3">Rainwater Harvesting</h3>
+          <p class="cs-item-text">
+            Embrace sustainability with our Rainwater Harvesting Systems,
+            tailored to reduce your environmental footprint and lower your water
+            bills.
+          </p>
+        </a>
+      </li>
+      <li class="cs-item">
+        <a href="" class="cs-link">
+          <img
+            class="cs-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/brain.svg"
+            loading="lazy"
+            decoding="async"
+            alt="icon"
+            width="40"
+            height="40"
+            aria-hidden="true"
+          />
+          <h3 class="cs-h3">Organic Lawn Care</h3>
+          <p class="cs-item-text">
+            Our Organic Lawn Care service guarantees a lush, green lawn without
+            the use of harmful chemicals, making it safe for your family and
+            pets.
+          </p>
+        </a>
+      </li>
+      <li class="cs-item">
+        <a href="" class="cs-link">
+          <img
+            class="cs-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/users.svg"
+            loading="lazy"
+            decoding="async"
+            alt="icon"
+            width="40"
+            height="40"
+            aria-hidden="true"
+          />
+          <h3 class="cs-h3">Snow Removal</h3>
+          <p class="cs-item-text">
+            Stay cozy and safe inside while we handle the cold, providing Snow
+            Removal and Winterizing Services to protect your landscape from
+            winter's harsh elements.
+          </p>
+        </a>
+      </li>
+      <li class="cs-item">
+        <a href="" class="cs-link">
+          <img
+            class="cs-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/Layer.svg"
+            loading="lazy"
+            decoding="async"
+            alt="icon"
+            width="40"
+            height="40"
+            aria-hidden="true"
+          />
+          <h3 class="cs-h3">Outdoor Lighting</h3>
+          <p class="cs-item-text">
+            Transform your garden into a nighttime wonderland with our Outdoor
+            Lighting Solutions, enhancing safety and extending your enjoyment of
+            the outdoors after the sun sets.
+          </p>
+        </a>
+      </li>
+      <li class="cs-item">
+        <a href="" class="cs-link">
+          <img
+            class="cs-icon"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/Layer.svg"
+            loading="lazy"
+            decoding="async"
+            alt="icon"
+            width="40"
+            height="40"
+            aria-hidden="true"
+          />
+          <h3 class="cs-h3">Custom Landscape Design</h3>
+          <p class="cs-item-text">
+            Our premier service, offering personalized designs that perfectly
+            align with our clients' visions and the natural characteristics of
+            their spaces.
+          </p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- ============================================ -->
+<!--                     CTA                      -->
+<!-- ============================================ -->
+
+<section id="cta-51">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Get in Touch</span>
+      <h2 class="cs-title">Create Your Outdoor Sanctuary Today</h2>
+      <p class="cs-text">
+        Let GreenScape Harmony bring your garden dreams to life with sustainable
+        elegance. Tap into our expertise in eco-friendly landscaping to elevate
+        your outdoor living space. Ready for a change? Click below for a
+        consultation that promises to transform.
+      </p>
+      <a href="" class="cs-button-solid">Start Your Transformation</a>
+    </div>
+  </div>
+  <!-- Background Image-->
+  <picture class="cs-picture">
+    <source media="(max-width: 600px)" srcset="/assets/images/cta1-m.webp" />
+    <source media="(min-width: 601px)" srcset="/assets/images/cta1.webp" />
+    <img
+      loading="lazy"
+      decoding="async"
+      src="/assets/images/cta1.jpg"
+      alt="Lawns"
+      width="1920"
+      height="1280"
+      aria-hidden="true"
+    />
+  </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                     FAQ                      -->
+<!-- ============================================ -->
+
+<section id="faq-1261">
+  <div class="cs-container">
+    <div class="cs-content">
+      <h2 class="cs-title">Frequently Asked Questions</h2>
+    </div>
+    <!--We made two lists so when you open an FAQ item, they behave properly and separate from each other, wrapped in a wrapper div for better flexboxxing -->
+    <div class="cs-wrapper">
+      <ul class="cs-faq-group">
+        <!-- Active class added as default -->
+        <li class="cs-faq-item active">
+          <button class="cs-button">
+            <span class="cs-button-text">
+              What makes GreenScape Harmony different from other landscaping
+              companies?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            GreenScape Harmony is dedicated to creating beautiful, sustainable
+            landscapes. Our focus on eco-friendly practices, personalized
+            designs, and innovative technology sets us apart.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <span class="cs-button-text">
+              Do you provide services for both residential and commercial
+              properties?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            Yes, we offer comprehensive landscaping services for both
+            residential and commercial clients, tailoring our approach to meet
+            the specific needs of each project.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <span class="cs-button-text">
+              How does the custom landscape design process work?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            Our process begins with a consultation to understand your vision and
+            assess your space. We then create a detailed 3D design, allowing you
+            to visualize the project before we start the physical landscaping
+            work.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <span class="cs-button-text">
+              Can you work with my existing landscape or is a complete redesign
+              necessary?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            We can certainly work with your existing landscape. Our services
+            include garden revitalization, where we enhance and improve upon
+            what you already have.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <span class="cs-button-text">
+              What sustainable practices do you implement in your landscaping
+              projects?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            We use eco-friendly materials, implement native planting, offer
+            organic lawn care, and install smart irrigation systems to conserve
+            water, among other sustainable practices.
+          </p>
+        </li>
+      </ul>
+      <ul class="cs-faq-group">
+        <!-- Active class added as default -->
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <span class="cs-button-text">
+              What are the costs associated with your landscaping services?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            Costs vary based on the project's scope and complexity. We provide
+            detailed quotes after the initial consultation and site assessment.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <span class="cs-button-text">
+              How long does a typical landscaping project take to complete?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            The duration depends on the project's size and complexity. We
+            provide a timeline estimate along with the project proposal.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <span class="cs-button-text">
+              Do you offer maintenance services after the project is completed?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            Yes, we offer seasonal maintenance services to ensure your landscape
+            remains in top condition throughout the year.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <span class="cs-button-text">
+              Are your landscaping methods safe for pets and children?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            Absolutely. We prioritize the use of safe, non-toxic materials and
+            methods in all our projects.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <span class="cs-button-text">
+              How do I get started with GreenScape Harmony for my landscaping
+              project?
+            </span>
+          </button>
+          <p class="cs-item-p">
+            You can start by contacting us through our website or phone. We'll
+            schedule an initial consultation to discuss your needs and how we
+            can help.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--SVG Waves-->
+  <picture class="cs-background">
+    <!--Mobile Image-->
+    <source
+      media="(max-width: 600px)"
+      srcset="
+        https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves-m.svg
+      "
+    />
+    <!--Tablet and above Image-->
+    <source
+      media="(min-width: 601px)"
+      srcset="
+        https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves.svg
+      "
+    />
+    <img
+      aria-hidden="true"
+      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-waves.svg"
+      loading="lazy"
+      decoding="async"
+      alt="moon"
+      width="1920"
+      height="647"
+    />
+  </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-353">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Testimonials</span>
+      <h2 class="cs-title">Trusted by Thousand of People & Companies</h2>
+      <p class="cs-text">
+        GreenScape Harmony is more than just landscaping; it's about crafting
+        enduring outdoor experiences. We're proud to be a part of our clients'
+        lives, enhancing their homes and businesses with nature's splendor. Join
+        the multitude who trust us to bring their green dreams to reality.
+      </p>
+    </div>
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <img
+          class="cs-quote"
+          aria-hidden="true"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg"
+          decoding="async"
+          alt="quote icon"
+          width="40"
+          height="33"
+        />
+        <p class="cs-review">
+          We recently hired GreenScape Harmony to redesign our backyard, and the
+          experience was fantastic from start to finish. The team was
+          professional, friendly, and incredibly knowledgeable about sustainable
+          practices. Our new backyard is not only beautiful but also
+          eco-friendly, which was very important to us. The smart irrigation
+          system they installed is a game-changer. We highly recommend
+          GreenScape Harmony to anyone looking for quality landscaping services!
+        </p>
+        <span class="cs-name">Jennifer and Mark Thompson</span>
+        <span class="cs-job">Residential Clients</span>
+      </li>
+      <li class="cs-item">
+        <img
+          class="cs-quote"
+          aria-hidden="true"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg"
+          decoding="async"
+          alt="quote icon"
+          width="40"
+          height="33"
+        />
+        <p class="cs-review">
+          As a small business owner, I wanted our office surroundings to reflect
+          our commitment to sustainability. GreenScape Harmony transformed our
+          bland outdoor space into a stunning green haven. Their use of native
+          plants and eco-friendly materials was impressive. The 3D designs they
+          provided helped us visualize the project before it began, ensuring
+          that the final result was exactly what we wanted. Our employees and
+          clients love the new outdoor area!
+        </p>
+        <span class="cs-name">David Liu</span>
+        <span class="cs-job"> CEO of EcoTech Innovations</span>
+        <!--Person Image in PNG format-->
+      </li>
+    </ul>
+  </div>
+</section>
+
+{% include 'components/cta.html' %} {% endblock %}
